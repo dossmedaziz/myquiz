@@ -30,3 +30,9 @@ span {
   display: flex;
   color: #8692a6;
 }
+
+.form__body{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}

@@ -1,0 +1,17 @@
+.input__style {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input__field {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 40px 5px #ededed;
+  padding: 0 20px;
+  margin: 30px 0;
+  font-weight: 600;
+}
