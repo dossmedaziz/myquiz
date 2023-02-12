@@ -3,6 +3,7 @@ import TextInput from "../../../components/inputs/textInput";
 import SimpleButton from "../../../components/buttons/simpleButton";
 import IconButton from "../../../components/buttons/iconButton";
 import GoogleIcon from "../../../assets/svg/GoogleIcon";
+import CheckBoxInput from "../../../components/inputs/checkBox";
 
 function Login() {
     return (
@@ -15,33 +16,46 @@ function Login() {
 
                 <div className={styles.form__body}>
                     <form>
-                        <TextInput
-                            type="email"
-                            name="email"
-                            placeholder="Enter Your Email Address"
-                            label="Email Address"
-                            required={true}
-                        />
-                        <TextInput
-                            type="password"
-                            name="password"
-                            placeholder="Enter Your Password"
-                            label="Password"
-                            required={true}
-                        />
+                        <div className={styles.input__item}>
+                            <TextInput
+                                type="email"
+                                name="email"
+                                placeholder="Enter Your Email Address"
+                                label="Email Address"
+                                required={true}
+                            />
+                        </div>
+                        <div className={styles.input__item}>
+                            <TextInput
+                                type="password"
+                                name="password"
+                                placeholder="Enter Your Password"
+                                label="Password"
+                                required={true}
+                            />
+                        </div>
 
-                        <SimpleButton
-                            label={"Login"}
-                            onClick={null}
-                            bgColor={"#8692A6"}
-                            textColor={"#FFFFFF"}
-                        />
-                        <IconButton
-                            label={"Login with Google"}
-                            onClick={null}
-                            Icon={GoogleIcon}
-                        />
-
+                        <div className={styles.input__item}>
+                            <CheckBoxInput
+                                label={"Remember my password"}
+                                onChange={null}
+                            />
+                        </div>
+                        <div className={styles.input__item}>
+                            <SimpleButton
+                                label={"Login"}
+                                onClick={null}
+                                bgColor={"#8692A6"}
+                                textColor={"#FFFFFF"}
+                            />
+                        </div>
+                        <div className={styles.input__item}>
+                            <IconButton
+                                label={"Login with Google"}
+                                onClick={null}
+                                Icon={GoogleIcon}
+                            />
+                        </div>
                     </form>
                 </div>
             </div>
