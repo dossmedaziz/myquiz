@@ -51,7 +51,7 @@ span {
 
 @media screen and (max-width: 790px) {
   .login__form {
-    width: 100%;
+    width: 80%;
     padding: 0 20px;
   }
   .form__title {
