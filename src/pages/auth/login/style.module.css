@@ -8,11 +8,10 @@
 
 .login__form {
     width: 50%;
-    height: 60%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /*background-color: yellowgreen;*/
 }
 
 .form__title {
@@ -42,4 +41,11 @@ span {
 
 .input__item {
     margin: 20px 0;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .login__form {
+        width: 80%;
+    }
 }
