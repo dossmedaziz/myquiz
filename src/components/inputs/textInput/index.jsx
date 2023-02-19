@@ -7,10 +7,11 @@ function TextInput({
   placeholder,
   onChange,
   required = false,
+
 }) {
   return (
     <div className={styles.input__style}>
-      <label>
+      <label className={styles.input__label}>
         {label}
         {required && "*"}
       </label>
