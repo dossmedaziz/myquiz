@@ -71,3 +71,13 @@ span {
     margin: 10px 0;
   }
 }
+
+
+@media screen and (max-height: 720px ) {
+  .login__form{
+    height: 100%;
+    padding-top: 50px ;
+    box-sizing: border-box;
+
+  }
+}
