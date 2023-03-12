@@ -5,35 +5,36 @@ import TextInput from "../../components/inputs/textInput";
 import SimpleButton from "../../components/buttons/simpleButton";
 
 export default function Layout() {
+  const [data, setData] = React.useState([]);
+
+  let fakeData = () => {
+    let users = [];
+    for (let i = 0; i < 100; i++) {
+      users.push({ id: i, name: "name", surname: "surname" });
+    }
+    setData(users);
+  };
+
+  React.useEffect(() => {
+    fakeData();
+  }, [data]);
   return (
     <>
       <div className={style.container}>
-        <div className={style.navbar}>
-          <div className={style.logo__container}>
-            <h1 className={style.logo}>Logo</h1>
-          </div>
-          <div className={style.searchbar}>
-            <TextInput
-              placeholder="Search"
-              name="search"
-              required={false}
-              value={""}
-              onChange={() => {}}
-            />
-          </div>
-          <div className={style.start__button}>
-            <SimpleButton
-              label="Start"
-              textColor="white"
-              bgColor="#8692A6"
-              onClick={() => {}}
-            />
-          </div>
-          <div className={style.profile__card}></div>
+        <div className={style.sideBar}>
+          <h1>SideBar</h1>
         </div>
-        <div className={style.sidebar}></div>
-        <div className={style.content}>
-          <Outlet />
+        <div className={style.main}>
+          <div className={style.header}></div>
+          <div className={style.content}>
+            {data.map((item, index) => {
+              return (
+                <div style={{ backgroundColor: "red"  , width : '150px' }} key={index}>
+                  {item.name + "-" + index}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
