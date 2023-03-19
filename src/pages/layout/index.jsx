@@ -17,7 +17,7 @@ export default function Layout() {
 
   React.useEffect(() => {
     fakeData();
-  }, [data]);
+  }, []);
   return (
     <>
       <div className={style.container}>

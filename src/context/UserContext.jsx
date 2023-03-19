@@ -1,4 +1,4 @@
-import {createContext} from 'react';
+import {createContext, useContext} from 'react';
 
 export const UserContext = createContext(null);
 export default function UserProvider({children}) {
@@ -17,4 +17,4 @@ export default function UserProvider({children}) {
     );
 }
 
-export const useUser = () => createContext(UserContext);
+export const useUser = () => useContext(UserContext);
