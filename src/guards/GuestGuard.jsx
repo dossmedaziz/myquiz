@@ -1,12 +1,17 @@
-import { Navigate, nav } from "react-router-dom";
+import {Navigate, nav} from "react-router-dom";
 import {useAuth} from "../context/useAuth";
+import {useNavigate} from "react-router-dom";
+import {useLayoutEffect} from "react";
 
-export default function GuestGuard({ children }) {
-  const {isAuthenticated} = useAuth();
+export default function GuestGuard({children}) {
+    const {isAuthenticated} = useAuth();
+    const navigate = useNavigate();
+    useLayoutEffect(() => {
+            if (isAuthenticated) {
+                navigate("/");
+            }
+        }
+        , [isAuthenticated]);
 
-  if (isAuthenticated) {
-    return <Navigate to="/" />;
-  }
-
-  return children;
+    return children;
 }

@@ -52,6 +52,7 @@ function Login() {
                 label={"Login with Google"}
                 onClick={null}
                 Icon={GoogleIcon}
+                style={{ boxShadow: "0px 15px 40px 5px #ededed" }}
               />
             </div>
             <div className={styles.input__item}>

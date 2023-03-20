@@ -7,9 +7,8 @@
 }
 .sideBar {
   width: 20%;
-  background-color: rgb(255, 172, 172);
   position: sticky;
-  top:150px;
+  top: 150px;
   bottom: 0;
 }
 
@@ -25,6 +24,6 @@
   background-color: rgb(146, 252, 187);
 }
 
-.content{
-    overflow-y: scroll;
+.content {
+  overflow-y: scroll;
 }
