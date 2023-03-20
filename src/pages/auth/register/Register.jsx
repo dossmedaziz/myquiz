@@ -50,9 +50,9 @@ function Register() {
                             />
                         </div>
                         <div className={styles.input__item}>
-              <span className={styles.form__footer}>
+              <div className={styles.form__footer}>
                Already have an account? <Link to="/auth/login">Login</Link>
-              </span>
+              </div>
                         </div>
                     </form>
                 </div>

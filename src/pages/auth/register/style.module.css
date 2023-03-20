@@ -17,7 +17,12 @@
 }
 
 .form__header {
-
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    color: #8692a6;
 }
 
 .form__title {
@@ -32,6 +37,14 @@
 
 .input__item {
     margin: 20px 0;
+}
+.form__footer{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    color: #8692a6;
 }
 @media screen and (max-width: 1400px) {
     .register__form {
