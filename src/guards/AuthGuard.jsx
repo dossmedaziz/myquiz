@@ -4,7 +4,7 @@ import { useAuth } from "../context/useAuth";
 export default function AuthGuard({ children }) {
   const { isAuthenticated } = useAuth();
   if (!isAuthenticated) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/auth/login" />;
   }
 
   return children;
