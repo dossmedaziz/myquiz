@@ -12,7 +12,7 @@ function Login() {
       <div className={styles.login__form}>
         <div className={styles.form__header}>
           <h2 className={styles.form__title}>Login to your Account</h2>
-          <span>with your registered Email Address</span>
+          <span className={styles.span}>with your registered Email Address</span>
         </div>
 
         <div className={styles.form__body}>
