@@ -5,6 +5,7 @@ import {useLayoutEffect} from "react";
 
 export default function GuestGuard({children}) {
     const {isAuthenticated} = useAuth();
+    console.log("isAuthenticated", isAuthenticated);
     const navigate = useNavigate();
     useLayoutEffect(() => {
             if (isAuthenticated) {
