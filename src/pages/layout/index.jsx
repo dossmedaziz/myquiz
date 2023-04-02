@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./style.module.css";
 import SideBar from "../../components/sideBar";
+import NavBar from "../../components/navBar";
+import { Outlet } from "react-router-dom";
 export default function Layout() {
   const [data, setData] = React.useState([]);
 
@@ -21,18 +23,11 @@ export default function Layout() {
        <SideBar />
       </div>
       <div className={style.main}>
-        <div className={style.header}></div>
+        <div className={style.header}>
+          <NavBar />
+        </div>
         <div className={style.content}>
-          {data.map((item, index) => {
-            return (
-              <div
-                style={{ backgroundColor: "red", width: "150px" }}
-                key={index}
-              >
-                {item.name + "-" + index}
-              </div>
-            );
-          })}
+          <Outlet />
         </div>
       </div>
     </div>

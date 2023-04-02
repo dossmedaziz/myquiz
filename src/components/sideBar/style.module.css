@@ -4,6 +4,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: none;
 }
 .logo__container {
   width: 100%;

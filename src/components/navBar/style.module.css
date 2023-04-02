@@ -1,0 +1,15 @@
+.navbar__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #FBF9F9;
+    padding: 5px 5px ;
+    border: none;
+    box-sizing: border-box;
+}
+
+.searchbar__container{
+    width: 20%;
+}
