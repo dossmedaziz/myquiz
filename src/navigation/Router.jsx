@@ -3,8 +3,7 @@ import Auth from "../pages/auth";
 import Login from "../pages/auth/login/Login";
 import Register from "../pages/auth/register/Register";
 import Layout from "../pages/layout";
-import { GuestGuard } from "../guards";
-import AuthGuard from "../guards/AuthGuard";
+import { GuestGuard , AuthGuard } from "../guards";
 
 const routes = createBrowserRouter([
   {
