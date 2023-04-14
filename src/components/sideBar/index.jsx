@@ -7,7 +7,12 @@ import {
   NotificationIcon,
   LogOutIcon
 } from "../../assets/svg";
+import { Navigate } from "react-router-dom";
 function SideBar() {
+
+  const navigate = (path) => {
+    <Navigate to={path}  replace={true}/>
+  };
   return (
     <div className={style.container}>
       <div className={style.logo__container}>
@@ -21,7 +26,8 @@ function SideBar() {
               label="Dashboard"
               bgColor="#8692A6"
               labelColor="#fff"
-              onClick={() => console.log("Dashboard")}
+              onClick={() => navigate("/dashboard")
+              }
             />
           </div>
           <div className={style.link__container}>
@@ -31,7 +37,7 @@ function SideBar() {
               labelColor="#8692A6"
               bgColor="transparent"
               iconColor="#8692A6"
-              onClick={() => console.log("Dashboard")}
+              onClick={() => navigate("/support")}
             />
           </div>
           <div className={style.link__container}>
