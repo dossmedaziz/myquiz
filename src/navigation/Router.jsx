@@ -4,7 +4,7 @@ import Login from "../pages/auth/login/Login";
 import Register from "../pages/auth/register/Register";
 import Layout from "../pages/layout";
 import { GuestGuard , AuthGuard } from "../guards";
-import {GUESTPATHS} from "./paths";
+import {GUESTPATHS ,AUTHPATHS } from "./paths";
 
 const routes = createBrowserRouter([
   {
@@ -34,15 +34,15 @@ const routes = createBrowserRouter([
     ),
     children: [
       {
-        path: "", // todo : change the endpoint to dashboard
+        path: AUTHPATHS.DASHBOARD,
         element: <h1>Dashboard</h1>,
       },
       {
-        path: "support",
+        path: AUTHPATHS.SUPPORT,
         element: <h1>Support</h1>,
       },
       {
-        path: "notification",
+        path: AUTHPATHS.NOTIFICATIONS,
         element: <h1>Notification</h1>,
       },
     ],
