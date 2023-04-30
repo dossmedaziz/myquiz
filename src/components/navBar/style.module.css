@@ -5,15 +5,9 @@
     justify-content: space-between; 
     align-items: center;
     background-color: #FBF9F9;
-    padding: 5px 5px ;
+    padding: 50px 0 0 50px;
     border: none;
     box-sizing: border-box;
 }
 
-.searchbar__container{
-    width: 20%;
-}
-.startbtn__container{
-    background-color: "red";
-    width: 20%;
-}
+
