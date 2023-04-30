@@ -4,6 +4,7 @@ import Login from "../pages/auth/login/Login";
 import Register from "../pages/auth/register/Register";
 import Layout from "../pages/layout";
 import { GuestGuard , AuthGuard } from "../guards";
+import {GUESTPATHS} from "./paths";
 
 const routes = createBrowserRouter([
   {
@@ -15,11 +16,11 @@ const routes = createBrowserRouter([
     ),
     children: [
       {
-        path: "login",
+        path: GUESTPATHS.LOGIN,
         element: <Login />,
       },
       {
-        path: "register",
+        path: GUESTPATHS.REGISTER,
         element: <Register />,
       },
     ],

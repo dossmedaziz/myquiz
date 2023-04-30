@@ -5,6 +5,7 @@ import IconButton from "../../../components/buttons/iconButton";
 import GoogleIcon from "../../../assets/svg/GoogleIcon";
 import CheckBoxInput from "../../../components/inputs/checkBox";
 import {Link} from "react-router-dom";
+import {GUESTPATHS} from "../../../navigation/paths";
 
 function Login() {
     return (
@@ -57,7 +58,7 @@ function Login() {
                         </div>
                         <div className={styles.input__item}>
               <span className={styles.form__footer}>
-                Don't have an account? <Link to="/auth/register">Register</Link>
+                Don't have an account? <Link to={`/auth/${GUESTPATHS.REGISTER}`}>Register</Link>
               </span>
                         </div>
                     </form>

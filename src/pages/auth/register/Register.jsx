@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import TextInput from "../../../components/inputs/textInput";
 import SimpleButton from "../../../components/buttons/simpleButton";
 import {Link} from "react-router-dom";
+import { GUESTPATHS} from "../../../navigation/paths";
 
 function Register() {
     return (
@@ -51,7 +52,7 @@ function Register() {
                         </div>
                         <div className={styles.input__item}>
               <div className={styles.form__footer}>
-               Already have an account? <Link to="/auth/login">Login</Link>
+               Already have an account? <Link to={`/auth/${GUESTPATHS.LOGIN}`}>Login</Link>
               </div>
                         </div>
                     </form>
