@@ -14,7 +14,7 @@ export default function Layout() {
                 <div className={style.header}>
                     <NavBar/>
                 </div>
-                <div className={style.content}>
+                <div className={style.content__side}>
                     <Outlet/>
                 </div>
             </div>
