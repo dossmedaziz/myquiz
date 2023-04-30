@@ -1,6 +1,7 @@
 import style from "./style.module.css";
 import TextInput from "../../components/inputs/textInput";
 import SimpleButton from "../buttons/simpleButton";
+import Avatar from "../avatar";
 
 export default function NavBar() {
     return (
@@ -13,8 +14,8 @@ export default function NavBar() {
                     onChange={() => {
                     }}
                     style={{
-                        width: "356px",
-                        height: "64px",
+                        width: "300px",
+                        height: "50px",
                         boxShadow: '0px 15px 40px 5px #EDEDED',
                         fontWeight: "normal",
                     }}
@@ -28,14 +29,13 @@ export default function NavBar() {
                     btnHeight="54px"
                     style={{
                         width: "212px",
-                        height: "64px"
+                        height: "50px",
                     }}
                 />
             </div>
             {" "}
             <div className={style.avatar__container}>
-                <div className={style.avatar}></div>
-                <div style={style.connected__user}></div>
+                <Avatar/>
             </div>
         </div>
     );

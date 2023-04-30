@@ -5,6 +5,7 @@ import Register from "../pages/auth/register/Register";
 import Layout from "../pages/layout";
 import { GuestGuard , AuthGuard } from "../guards";
 import {GUESTPATHS ,AUTHPATHS } from "./paths";
+import Dashboard from "../pages/dashboard";
 
 const routes = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const routes = createBrowserRouter([
     children: [
       {
         path: AUTHPATHS.DASHBOARD,
-        element: <h1>Dashboard</h1>,
+        element: <Dashboard />,
       },
       {
         path: AUTHPATHS.SUPPORT,

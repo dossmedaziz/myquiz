@@ -1,26 +1,35 @@
 .container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  width: 100%;
-  background-color: #FBF9F9;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: #FBF9F9;
 }
+
 .sideBar {
-  width: 20%;
-  position: sticky;
-  height: 100%;
+    width: 20%;
+    position: sticky;
+    height: 100%;
 }
 
 .main {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    box-sizing: border-box;
+   justify-content: flex-start;
 }
 
 .header {
-  width: 100%;
+    width: 100%;
 }
 
-.content {
-  overflow-y: scroll;
+.content__side {
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0px 15px 40px 5px #EDEDED;
+    border-radius: 30px;
+    height: 861px;
+    background-color: #FFFFFF;
 }
