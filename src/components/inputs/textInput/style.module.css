@@ -18,10 +18,10 @@
   border-radius: 30px;
   border: none;
   height: 64px;
-  box-sizing: border-box;
-  box-shadow: 0px 15px 40px 5px #ededed;
+  box-shadow: 0px 100px 100px 0px rgba(0,0,0,0.1);
   padding: 0 20px;
   font-weight: 600;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 790px) {
   .input__field {

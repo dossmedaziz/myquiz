@@ -3,8 +3,8 @@ import Auth from "../pages/auth";
 import Login from "../pages/auth/login/Login";
 import Register from "../pages/auth/register/Register";
 import Layout from "../pages/layout";
-import { GuestGuard } from "../guards";
-import AuthGuard from "../guards/AuthGuard";
+import { GuestGuard , AuthGuard } from "../guards";
+import {GUESTPATHS ,AUTHPATHS } from "./paths";
 
 const routes = createBrowserRouter([
   {
@@ -16,11 +16,11 @@ const routes = createBrowserRouter([
     ),
     children: [
       {
-        path: "login",
+        path: GUESTPATHS.LOGIN,
         element: <Login />,
       },
       {
-        path: "register",
+        path: GUESTPATHS.REGISTER,
         element: <Register />,
       },
     ],
@@ -34,15 +34,15 @@ const routes = createBrowserRouter([
     ),
     children: [
       {
-        path: "", // todo : change the endpoint to dashboard
+        path: AUTHPATHS.DASHBOARD,
         element: <h1>Dashboard</h1>,
       },
       {
-        path: "support",
+        path: AUTHPATHS.SUPPORT,
         element: <h1>Support</h1>,
       },
       {
-        path: "notification",
+        path: AUTHPATHS.NOTIFICATIONS,
         element: <h1>Notification</h1>,
       },
     ],

@@ -3,10 +3,11 @@ import styles from "./style.module.css";
 function TextInput({
   type = "text",
   value,
-  label,
+  label = null,
   placeholder,
   onChange,
   required = false,
+  style = {}
 
 }) {
   return (
@@ -22,6 +23,7 @@ function TextInput({
         onChange={onChange}
         required={required}
         className={styles.input__field}
+        style={{ ...style }}
       />
     </div>
   );

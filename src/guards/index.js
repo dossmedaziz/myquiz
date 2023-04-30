@@ -1,3 +1,3 @@
 import GuestGuard from "./GuestGuard";
-
-export {GuestGuard }
+import AuthGuard from "./AuthGuard";
+export {GuestGuard , AuthGuard }
